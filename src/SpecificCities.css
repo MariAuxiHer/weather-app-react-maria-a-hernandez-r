@@ -1,0 +1,21 @@
+.city-per-continent-buttons {
+    margin: 0% 0% 7% 25%;
+    font-size: 1.5vw;
+    padding: 5px 12px;
+    border: 1px solid #a78edb;
+    border-radius: 3.5%;
+    color: #3b2e5a;
+    background: #967ec5;
+    opacity: 0.6;
+    font-weight: bold;
+  }
+  
+  .city-per-continent-buttons:hover {
+    outline: none;
+    background: #e3d8ee;
+  }
+  
+  .city-per-continent-buttons:focus {
+    outline: none;
+    background: #d4bceb;
+  }
