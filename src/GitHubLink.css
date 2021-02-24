@@ -1,0 +1,15 @@
+#link-github {
+    /*text-align: center;*/
+    margin: 0% 3%;
+    font-size: 1.5vw;
+  }
+  
+  #link-github a {
+    color: #8675a9;
+    text-decoration: none;
+  }
+  
+  #link-github a:hover {
+    color: #3b2e5a;
+    text-decoration: underline;
+  }
