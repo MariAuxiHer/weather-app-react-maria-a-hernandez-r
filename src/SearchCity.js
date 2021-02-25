@@ -98,8 +98,7 @@ export default function SearchCity(props) {
   function getApiLocation(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
-    console.log(lat);
-    console.log(lon);
+    
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayCityInfo);
   }

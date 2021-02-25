@@ -1,0 +1,18 @@
+.five-days-forecast {
+    margin: 30px 25px 25px;
+    border-radius: 5px;
+    font-size: 1.8vw;
+    font-family: "Nanum Gothic", sans-serif;
+    font-family: "Old Standard TT", serif;
+    background-image: linear-gradient(to top, #f0cdf1 0%, #a893d1 100%);
+    color: #3b2e5a;
+  }
+  
+  .forecast-title {
+    text-align: center;
+    padding: 2.5% 0 0.2%;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #7862a3;
+    font-family: "Old Standard TT", serif;
+  }

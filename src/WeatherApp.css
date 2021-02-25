@@ -13,6 +13,83 @@
   color: #6e569e;
 }
 
+.fas {
+  color: #6e569e;
+}
+
+.far {
+  color: #6e569e;
+}
+
+.smaller-numbers {
+  font-size: 1.2vw;
+}
+
+#Weather-app {
+  margin-left: 25px;
+  color: #fbc2eb;
+}
+
+@media (max-width: 986px) {
+  .fa-city {
+    margin: 7px 0px 0px 30px;
+    font-size: 4.5vw;
+  }
+
+  #location-button {
+    font-size: 6vw;
+  }
+
+  #link-github {
+    /*text-align: center;*/
+
+    font-size: 2.2vw;
+  }
+}
+
+@media (max-width: 556px) {
+  /* For mobile phones: */
+  #location-button {
+    font-size: 6vw;
+  }
+
+  .fa-city {
+    margin: 7px 0px 0px 30px;
+    font-size: 4.5vw;
+  }
+
+  #enter-city {
+    font-size: 1.8vw;
+  }
+
+  #search-button {
+    font-size: 1.6vw;
+  }
+
+  .city-per-continent-buttons {
+    font-size: 2vw;
+  }
+
+  #city-current-info {
+    margin: 5% 2% 5% 7%;
+  }
+  #more-detailed-info {
+    margin: 5% 7% 5% 2%;
+  }
+  #more-detailed-info-center {
+    margin: 0px;
+  }
+
+  .header-main-title {
+    font-size: 5vw;
+  }
+
+  #link-github {
+    /*text-align: center;*/
+
+    font-size: 2.8vw;
+  }
+}
 
 /*
 .App {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CurrentInfo.css";
-/*import ThreeHoursForecastOneDay from "./ThreeHoursForecastOneDay.js";
-import FiveDaysForecast from "./FiveDaysForecast.js";*/
+import ThreeHoursForecastOneDay from "./ThreeHoursForecastOneDay.js";
+import FiveDaysForecast from "./FiveDaysForecast.js";
 import WeatherIcon from "./WeatherIcon.js";
 
 export default function CurrentInfo(props) {
@@ -73,6 +73,14 @@ export default function CurrentInfo(props) {
           </div>
         </div>
         
+        <ThreeHoursForecastOneDay
+          city={props.city}
+          unit={unit}
+          lat={props.lat}
+          lon={props.lon}
+        />
+
+<FiveDaysForecast lat={props.lat} lon={props.lon} unit={unit} />
         
       </div>
     );
@@ -134,7 +142,15 @@ export default function CurrentInfo(props) {
           </div>
         </div>
         
-        
+        <ThreeHoursForecastOneDay
+          city={props.city}
+          unit={unit}
+          lat={props.lat}
+          lon={props.lon}
+        />
+
+<FiveDaysForecast lat={props.lat} lon={props.lon} unit={unit} />
+
       </div>
     );
   }
