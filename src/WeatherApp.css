@@ -1,17 +1,4 @@
-.WeatherApp {
-  margin: 10% 3% 2% 3%;
-  /* border: 2px solid #c3aed6;*/
-  border-radius: 5px;
-  background-image: linear-gradient(to top, #fbc2eb, #f388a3, #a18cd1);
-}
 
-.HeaderMainTitle {
-  font-size: 3.8vw;
-  text-align: center;
-  padding: 25px 10px 10px;
-  font-family: "Courgette", cursive;
-  color: #6e569e;
-}
 
 .fas {
   color: #6e569e;
@@ -25,10 +12,6 @@
   font-size: 1.2vw;
 }
 
-#Weather-app {
-  margin-left: 25px;
-  color: #fbc2eb;
-}
 
 @media (max-width: 986px) {
   .fa-city {

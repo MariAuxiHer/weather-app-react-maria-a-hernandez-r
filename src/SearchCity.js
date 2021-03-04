@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SearchCity.css";
 import SpecificCities from "./SpecificCities";
 import CurrentInfo from "./CurrentInfo";
+import ChangeBackground from "./ChangeBackground";
 
 import axios from "axios";
 
@@ -134,8 +135,26 @@ export default function SearchCity(props) {
     setLoaded(true);
   }
 
+  //transform:"scale(2,4)",
+  /*<video autoPlay loop muted 
+     src="/Raindrops_Videvo.mp4" type="video/mp4"/>
+     few clouds
+     {weather.description} === "few clouds"
+     if(){
+<video autoPlay loop muted 
+     src="/cloudy.mp4" type="video/mp4"/>
+}
+     
+     */ 
+
   if (loaded)
     return (
+      <div className="Weather-App"> 
+
+<ChangeBackground description={weather.description}/>
+
+<h1 className="HeaderMainTitle">Real Time - Weather Report</h1>
+
       <div className="row">
         <div className="col-1">
           <i className="fas fa-city"></i>
@@ -183,6 +202,7 @@ export default function SearchCity(props) {
           lat={weather.lat}
           lon={weather.lon}
         />
+      </div>
       </div>
     );
   else {
