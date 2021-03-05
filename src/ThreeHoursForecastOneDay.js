@@ -56,6 +56,9 @@ export default function ThreeHoursForecastOneDay(props) {
     //So, I need to add sth that makes the state change.
     //&& props.city === infoThreeHours.city.name)
 
+    //col-xl-2 col-lg-2 col-md-4 col-4
+    //  <div className="col-xl-2 col-2" id="col-temp">
+
     return (
       <div className="detailed-information">
         <h2 className="weather-throughout-the-day"> Temperature </h2>
@@ -63,7 +66,7 @@ export default function ThreeHoursForecastOneDay(props) {
         <div className="row" id="detailed-information">
           {infoThreeHours.list.slice(0, 8).map(function (infoThreeHoursitem) {
             return (
-              <div className="col-xl-2 col-2" id="col-temp">
+              <div className="col-xl-2 col-3" id="col-temp">
                 <br />
                 <span>
                   {" "}
@@ -109,7 +112,7 @@ export default function ThreeHoursForecastOneDay(props) {
         <div className="row" id="detailed-information">
           {infoThreeHours.list.slice(0, 8).map(function (infoThreeHoursitem) {
             return (
-              <div className="col-xl-2 col-2" id="col-temp">
+              <div className="col-xl-2 col-3" id="col-temp">
                 <br />
                 <span>
                   {" "}

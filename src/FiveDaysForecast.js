@@ -45,7 +45,7 @@ export default function FiveDaysForecast(props) {
         <div className="row" id="forecast">
           {forecast.daily.slice(0, 8).map(function (forecastItem) {
             return (
-              <div className="col-xl-2 col-2" id="col-temp">
+              <div className="col-xl-2 col-3" id="col-temp">
                 <br />
                 <span>
                   {" "}
@@ -88,7 +88,7 @@ export default function FiveDaysForecast(props) {
         <div className="row" id="forecast">
           {forecast.daily.slice(0, 8).map(function (forecastItem) {
             return (
-              <div className="col-xl-2 col-2" id="col-temp">
+              <div className="col-xl-2 col-3" id="col-temp">
                 <br />
                 <span>
                   {" "}
