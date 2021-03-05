@@ -64,7 +64,7 @@ export default function CurrentInfo(props) {
                   </div>
 
                   <div className="col-12">
-                    <span id="sunset"> <i className="fas fa-sun"></i> <i className="fas fa-arrow-down"></i>Sunset: <br /> {props.sunset}</span>
+                    <span id="sunset"> <i className="fas fa-sun"></i> <i className="fas fa-arrow-down"></i> Sunset: <br /> {props.sunset}</span>
                   </div>
                   
                 </div>
@@ -121,19 +121,19 @@ export default function CurrentInfo(props) {
               <div className="container">
                 <div className="row" id="more-detailed-info-center">
                   <div className="col-12">
-                    <span id="humidity"> Humidity: {props.humidity}% </span>
+                    <span id="humidity"> <i className="fas fa-tint"></i> <i className="fas fa-percentage"></i> Humidity: <br /> {props.humidity}% </span>
                   </div>
 
                   <div className="col-12">
-                    <span id="wind"> Wind: {displaymph} </span>
+                    <span id="wind"> <i className="fas fa-wind"></i> Wind: <br /> {displaymph} </span>
                   </div>
 
                   <div className="col-12">
-                    <span id="sunrise"> Sunrise: {props.sunrise} </span>
+                    <span id="sunrise"> <i className="fas fa-sun"></i> <i className="fas fa-arrow-up"></i> Sunrise: <br /> {props.sunrise} </span>
                   </div>
 
                   <div className="col-12">
-                    <span id="sunset"> Sunset: {props.sunset} </span>
+                    <span id="sunset"> <i className="fas fa-sun"></i> <i className="fas fa-arrow-down"></i> Sunset: <br /> {props.sunset} </span>
                   </div>
                   
                 </div>
