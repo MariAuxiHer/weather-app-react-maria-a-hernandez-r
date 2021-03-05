@@ -14,7 +14,7 @@ function WeatherApp() {
         <SearchCity defaultCity="caracas" />
   
       </div>
-      <GitHubLink />
+      <GitHubLink/>
     </div>
   );
 }

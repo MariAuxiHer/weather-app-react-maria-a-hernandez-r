@@ -13,7 +13,9 @@ export default function GitHubLink() {
         >
           Open source-code
         </a>{" "}
-        by Maria Hernandez
+
+        <span className="name-maria">by <strong> Maria Hernandez</strong></span>
+        
       </span>
     </div>
   );

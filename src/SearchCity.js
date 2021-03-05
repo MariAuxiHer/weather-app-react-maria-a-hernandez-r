@@ -4,6 +4,7 @@ import SpecificCities from "./SpecificCities";
 import CurrentInfo from "./CurrentInfo";
 import ChangeBackground from "./ChangeBackground";
 
+
 import axios from "axios";
 
 export default function SearchCity(props) {
@@ -33,6 +34,13 @@ export default function SearchCity(props) {
     let timeMinutesHour = `${dayHour}:${dayMinutes}`;
     return timeMinutesHour;
   }
+
+  function convertDtToCurrentHour(dt) {
+    let day = new Date(dt * 1000);
+    let dayHour = day.getUTCHours();
+    return dayHour;
+  }
+
 
   function convertDtToCurrentDate(dt) {
     let dateFunc = new Date(dt * 1000); // to get the DateTime.
@@ -117,6 +125,7 @@ export default function SearchCity(props) {
   function displayCityInfo(response) {
     setWeather({
       date: convertDtToCurrentDate(response.data.dt + response.data.timezone),
+      hour: convertDtToCurrentHour(response.data.dt + response.data.timezone),
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -126,6 +135,12 @@ export default function SearchCity(props) {
         response.data.sys.sunrise + response.data.timezone
       ),
       sunset: convertDtToHours(
+        response.data.sys.sunset + response.data.timezone
+      ),
+      sunriseHour:convertDtToCurrentHour(
+        response.data.sys.sunrise + response.data.timezone
+      ),
+      sunsetHour: convertDtToCurrentHour(
         response.data.sys.sunset + response.data.timezone
       ),
       city: response.data.name,
@@ -151,7 +166,8 @@ export default function SearchCity(props) {
     return (
       <div className="Weather-App"> 
 
-<ChangeBackground description={weather.description}/>
+<ChangeBackground description={weather.description}  hour={weather.hour} sunriseHour={weather.sunriseHour}
+          sunsetHour={weather.sunsetHour} />
 
 <h1 className="HeaderMainTitle">Real Time - Weather Report</h1>
 
@@ -192,6 +208,7 @@ export default function SearchCity(props) {
         <CurrentInfo
           city={weather.city}
           date={weather.date}
+          hour={weather.hour}
           temperature={weather.temperature}
           description={weather.description}
           humidity={weather.humidity}
@@ -199,10 +216,13 @@ export default function SearchCity(props) {
           icon={weather.icon}
           sunrise={weather.sunrise}
           sunset={weather.sunset}
+          sunriseHour={weather.sunriseHour}
+          sunsetHour={weather.sunsetHour}
           lat={weather.lat}
           lon={weather.lon}
         />
       </div>
+     
       </div>
     );
   else {

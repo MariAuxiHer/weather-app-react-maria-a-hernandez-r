@@ -60,11 +60,11 @@ export default function CurrentInfo(props) {
                   </div>
 
                   <div className="col-12">
-                    <span id="sunrise"> Sunrise: {props.sunrise} </span>
+                    <span id="sunrise"> Sunrise: {props.sunrise}</span>
                   </div>
 
                   <div className="col-12">
-                    <span id="sunset"> Sunset: {props.sunset} </span>
+                    <span id="sunset"> Sunset: {props.sunset}</span>
                   </div>
                   
                 </div>

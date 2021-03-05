@@ -5,11 +5,15 @@
   }
   
   #link-github a {
-    color: #8675a9;
+    color: #F7F7F7;
     text-decoration: none;
   }
   
   #link-github a:hover {
-    color: #3b2e5a;
+    color: #F2E8DF;
     text-decoration: underline;
+  }
+
+  .name-maria {
+    color: #F2E8DF;
   }
