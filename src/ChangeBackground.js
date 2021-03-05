@@ -152,7 +152,7 @@ else if(props.description==="overcast clouds"){
 
 
 //RAIN
-    else if(props.description==="rain" || props.description==="moderate rain" || props.description==="light rain"){
+    else if(props.main==="Rain" || props.main==="Drizzle"){
     //DAY
     if(props.hour>props.sunriseHour && props.hour< props.sunsetHour){          
             return(
@@ -182,8 +182,7 @@ else if(props.description==="overcast clouds"){
             }
 
 //THUNDERSTORM
-    else if(props.description==="thunderstorm"){
-
+    else if(props.main==="Thunderstorm"){
     //DAY
     if(props.hour>props.sunriseHour && props.hour< props.sunsetHour){      
                 return(
@@ -215,8 +214,8 @@ else if(props.description==="overcast clouds"){
             }
                 
  
-//SNOW
-    else if(props.description==="snow" || props.description==="light snow"){
+//SNOW Snow
+        else if(props.main==="Snow"){ 
 
         if(props.hour>props.sunriseHour && props.hour< props.sunsetHour){   
             return(
@@ -248,7 +247,7 @@ else if(props.description==="overcast clouds"){
                 }   
                 
 //MIST                
-    else if(props.description==="mist" || props.description==="fog"){
+    else if(props.main==="Mist" || props.main==="Fog" || props.main==="Smoke" || props.main==="Haze" || props.main==="Dust" || props.main==="Sand" || props.main==="Ash" || props.main==="Squall" || props.main==="Tornado"){
         if(props.hour>props.sunriseHour && props.hour< props.sunsetHour){   
              return(
         <video autoPlay loop muted 

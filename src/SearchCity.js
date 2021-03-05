@@ -128,6 +128,7 @@ export default function SearchCity(props) {
       hour: convertDtToCurrentHour(response.data.dt + response.data.timezone),
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
+      main: response.data.weather[0].main,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       icon: response.data.weather[0].icon,
@@ -166,7 +167,7 @@ export default function SearchCity(props) {
     return (
       <div className="Weather-App"> 
 
-<ChangeBackground description={weather.description}  hour={weather.hour} sunriseHour={weather.sunriseHour}
+<ChangeBackground description={weather.description}  main={weather.main} hour={weather.hour} sunriseHour={weather.sunriseHour}
           sunsetHour={weather.sunsetHour} />
 
 <h1 className="HeaderMainTitle">Real Time - Weather Report</h1>
