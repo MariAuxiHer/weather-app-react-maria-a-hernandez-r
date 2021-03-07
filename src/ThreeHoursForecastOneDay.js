@@ -66,7 +66,7 @@ export default function ThreeHoursForecastOneDay(props) {
         <div className="row" id="detailed-information">
           {infoThreeHours.list.slice(0, 8).map(function (infoThreeHoursitem) {
             return (
-              <div className="col-xl-2 col-3" id="col-temp">
+              <div className="col-xl-2 col-lg-2 col-md-4 col-3" id="col-temp">
                 <br />
                 <span>
                   {" "}
@@ -112,7 +112,7 @@ export default function ThreeHoursForecastOneDay(props) {
         <div className="row" id="detailed-information">
           {infoThreeHours.list.slice(0, 8).map(function (infoThreeHoursitem) {
             return (
-              <div className="col-xl-2 col-3" id="col-temp">
+              <div className="col-xl-2 col-lg-2 col-md-4 col-3" id="col-temp">
                 <br />
                 <span>
                   {" "}

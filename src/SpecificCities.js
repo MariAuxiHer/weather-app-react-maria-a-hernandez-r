@@ -35,7 +35,7 @@ export default function SpecificCities(props) {
   return (
     <div className="container">
       <div className="row extra-space">
-        <div className="col-xl-2 col-lg-2 col-md-4 col-4">
+        <div className="col-xl-2 col-lg-4 col-md-4 col-4">
           <button
             type="button"
             className="city-per-continent-buttons"
@@ -48,7 +48,7 @@ export default function SpecificCities(props) {
           </button>
         </div>
 
-        <div className="col-xl-2 col-lg-2 col-md-4 col-4">
+        <div className="col-xl-2 col-lg-4 col-md-4 col-4">
           <button
             type="button"
             className="city-per-continent-buttons"
@@ -61,7 +61,7 @@ export default function SpecificCities(props) {
           </button>
         </div>
 
-        <div className="col-xl-2 col-lg-2 col-md-4 col-4">
+        <div className="col-xl-2 col-lg-4 col-md-4 col-4">
           <button
             className="city-per-continent-buttons"
             id="Nairobi"
@@ -72,7 +72,7 @@ export default function SpecificCities(props) {
           </button>
         </div>
 
-        <div className="col-xl-2 col-lg-2 col-md-4 col-4">
+        <div className="col-xl-2 col-lg-4 col-md-4 col-4">
           <button
             className="city-per-continent-buttons"
             id="Tokyo"
@@ -83,7 +83,7 @@ export default function SpecificCities(props) {
           </button>
         </div>
 
-        <div className="col-xl-2 col-lg-2 col-md-4 col-4">
+        <div className="col-xl-2 col-lg-4 col-md-4 col-4">
           <button
             className="city-per-continent-buttons"
             id="Madrid"
@@ -94,7 +94,7 @@ export default function SpecificCities(props) {
           </button>
         </div>
 
-        <div className="col-xl-2 col-lg-2 col-md-4 col-4">
+        <div className="col-xl-2 col-lg-4 col-md-4 col-4">
           <button
             className="city-per-continent-buttons"
             id="Fiji"
