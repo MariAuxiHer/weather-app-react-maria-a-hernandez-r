@@ -56,8 +56,6 @@ export default function ThreeHoursForecastOneDay(props) {
     //So, I need to add sth that makes the state change.
     //&& props.city === infoThreeHours.city.name)
 
-    //col-xl-2 col-lg-2 col-md-4 col-4
-    //  <div className="col-xl-2 col-2" id="col-temp">
 
     return (
       <div className="detailed-information">

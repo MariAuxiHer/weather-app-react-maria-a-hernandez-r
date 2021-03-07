@@ -44,7 +44,11 @@
 }
 
 @media (max-width: 556px) {
-  /* For mobile phones: */
+ /* For mobile phones: */
+  .Weather-App {
+    margin: 10% 5% 2% 5%;
+}
+ 
   #location-button {
     font-size: 6vw;
   }
